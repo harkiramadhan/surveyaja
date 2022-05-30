@@ -23,33 +23,24 @@ class Welcome extends CI_Controller {
 			'title' => 'Beranda'
 		];
 		$this->load->view('landing', $vars);
-	}
-
-	public function fitur(){
-		$vars = [
-			'title' => 'Fitur'
-		];
-		$this->load->view('fitur', $vars);
-	}
-
-	public function layanan(){
-		$vars = [
-			'title' => 'Layanan'
-		];
-		$this->load->view('layanan', $vars);
+		$this->load->view('layouts/footer', $vars);
 	}
 
 	public function harga(){
 		$vars = [
 			'title' => 'HARGA'
 		];
+		$this->load->view('layouts/header', $vars);
 		$this->load->view('harga', $vars);
+		$this->load->view('layouts/footer', $vars);
 	}
 
 	public function klien(){
 		$vars = [
 			'title' => 'CERITA KLIEN'
 		];
+		$this->load->view('layouts/header', $vars);
 		$this->load->view('cerita-klien', $vars);
+		$this->load->view('layouts/footer', $vars);
 	}
 }

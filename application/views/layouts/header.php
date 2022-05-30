@@ -84,88 +84,20 @@
                 </div>
             </div>
         </nav>
+        <!-- Navigasi End -->
 
         <div class="header py-5">
-            <div class="container py-5">
-                <div class="row justify-content-center pb-5">
-                    <div class="col-lg-6 col-10 pt-5 py-5">
-                        <div class="align-self-center" data-aos="fade-up"data-aos-anchor-placement="center-center" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                            <h1 class="text-white fw-semibold">Selamat, <br> <span class="text-warning">Survey</span> Tersimpan</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <img class="position-absolute end-0" src="/assets/img/circle-white-end.svg" style="width: 200px;" alt=""> -->
-
-    </section>
-
-    <!-- Meet Our Team -->
-    <section class="d-flex flex-column py-5" style="margin-top: -230px;">
-        
-        <div class="container">
-    
-            <div class="list-fitur mt-4 col-lg-8 col-12 mx-auto">
+            <div class="container pt-5">
                 <div class="row">
-                    <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duratioin="3000">
-                        <div class="card rounded-4 p-4 text-center ">
-                           <img src="<?= base_url('/assets/images/img/confirm.svg') ?>" alt="" class="mx-auto" style="width: 300px;">
-                           <p class="fw-lighter mt-2">Selanjutnya, kami akan menghubungi anda melewati Whatsapp. Pastikan nomor yang anda masukan sudah benar. </p>
-                           <hr class="my-2">
-                           <p class="fw-lighter mt-2 mb-0">Untuk informasi lebih lanjut, hubungi:</p>
-                           <a href="mailto:partner@surveyaja.com" class="text-danger">partner@surveyaja.com</a>
+                    <div class="col-12 pt-5 py-5 text-center">
+                        <div class="align-self-center" data-aos="fade-up"data-aos-anchor-placement="center-center" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+                            <h1 class="text-white fw-semibold">Mau <span class="text-warning">survey</span> atau <span class="text-warning">riset</span> ? <br> ya di Surveyaja.com</h1>
+                            <p class="text-white fs-5 fw-lighter mt-2">Semakin mudah anda malakukan survey <br> Bersama Surveyaja.com</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
         <!-- <img class="position-absolute end-0" src="/assets/img/circle-white-end.svg" style="width: 200px;" alt=""> -->
 
     </section>
-
-
-    <section class="pt-5 pb-3 bg-dark">
-        <div class="container pb-3">
-            <dev class="row">
-                <div class="col-lg-6 col-12 pe-5 ps-3">
-                    <img src="<?= base_url('/assets/images/img/main-logo.svg') ?>" alt="">
-                    <p class="text-white mt-4">Membangun pengetahuan dan menguji hipotesa menjadi kebutuhan para data driven decision maker, surveyaja.com membantu Anda menyedikan survey yang reliable membantu memprovokasi gagasan dan hipotesis Anda.</p>
-                </div>
-                <div class="col-lg-3 col-12 d-flex flex-column ps-lg-5 ps-3 mt-lg-5 mt-3">
-                    <a href="" class="text-white mb-2 text-decoration-none">Beranda</a>
-                    <a href="" class="text-white mb-2 text-decoration-none">Fitur</a>
-                    <a href="" class="text-white mb-2 text-decoration-none">Layanan Kami</a>
-                    <a href="" class="text-white mb-2 text-decoration-none">Cara Mulai</a>
-                </div>
-                <div class="col-lg-3 col-12 d-flex flex-column ps-lg-5 ps-3 mt-lg-5 mt-3">
-                    <a href="" class="text-white mb-2 text-decoration-none">Harga</a>
-                    <a href="" class="text-white mb-2 text-decoration-none">Klien KAmi</a>
-                    <a href="" class="text-white mb-2 text-decoration-none">Kontak Kami</a>
-                    <a href="" class="text-white mb-2 text-decoration-none">Berita</a>
-                </div>
-            </dev>
-        </div>
-       
-        <hr class="my-3 border-top border-1">
-
-        <p class="text-white text-center mb-0"><?= date('Y') ?> Copyright Surveyaja.com. All Rights Reserved.</p>
-
-        <!-- <img class="position-absolute end-0" src="/assets/img/circle-white-end.svg" style="width: 200px;" alt=""> -->
-    </section>
-
-    <script   src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-    <script>
-        baseUrl = '<?= site_url('') ?>';
-    </script>
-
-    <script src="<?= base_url('assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js') ?>"></script>
-    <script src="<?= base_url('assets/node_modules/aos/dist/aos.js') ?>"></script>
-
-    <script src="<?= base_url('assets/js/custom.js') ?>"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-</html>

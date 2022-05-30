@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BERANDA - SURVEYAJA.COM</title>
+    <title><?= $title ?> - SURVEYAJA.COM</title>
 
     <!-- style scss -->
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
 
     <!-- Fade Animation -->
-    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="<?= base_url('assets/node_modules/aos/dist/aos.css') ?>">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -28,13 +28,13 @@
 <body class="bg-white">
 
     <!-- Header dan Navigasi -->
-    <section class="" style="background: url('/assets/img/bg-header.svg') no-repeat center bottom; background-size: cover; max-height: 561.5px;">
+    <section class="" style="background: url('<?= base_url('/assets/images/img/bg-header.svg') ?>') no-repeat center bottom; background-size: cover; max-height: 561.5px;">
 
         <!-- Navigasi -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-3" style="background: #E31837;">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="/assets/img/main-logo.svg" alt="">
+                    <img src="<?= base_url('/assets/images/img/main-logo.svg') ?>" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item px-2">
-                        <a class="nav-link text-uppercase fs-6 fw-normal text-white active" aria-current="page" href="#" style="font-size: 14px !important;">Beranda</a>
+                        <a class="nav-link text-uppercase fs-6 fw-normal text-white active" aria-current="page" href="<?= site_url('') ?>" style="font-size: 14px !important;">Beranda</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link text-uppercase fs-6 fw-normal text-white" href="#" style="font-size: 14px !important;">Fitur</a>
@@ -54,10 +54,10 @@
                         <a class="nav-link text-uppercase fs-6 fw-normal text-white" href="#" style="font-size: 14px !important;">Cara Mulai</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-uppercase fs-6 fw-normal text-white" href="#" style="font-size: 14px !important;">Harga</a>
+                        <a class="nav-link text-uppercase fs-6 fw-normal text-white" href="<?= site_url('harga') ?>" style="font-size: 14px !important;">Harga</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-uppercase fs-6 fw-normal text-white" href="#" style="font-size: 14px !important;">Klien</a>
+                        <a class="nav-link text-uppercase fs-6 fw-normal text-white" href="<?= base_url('klien') ?>" style="font-size: 14px !important;">Klien</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link text-uppercase fs-6 fw-normal text-white" href="#" style="font-size: 14px !important;">Kontak</a>
@@ -73,7 +73,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12 py-5">
-                        <img class="rounded-5 mx-auto mt-5  d-lg-block d-none" src="/assets/img/img-header.png" style="height: 350px;" alt="" data-aos="fade-up"data-aos-anchor-placement="center-center">
+                        <img class="rounded-5 mx-auto mt-5  d-lg-block d-none" src="<?= base_url('/assets/images/img/img-header.png') ?>" style="height: 350px;" alt="" data-aos="fade-up"data-aos-anchor-placement="center-center">
                     </div>
                     <div class="col-lg-6 col-12 pt-lg-5 pt-0 pb-5 d-flex align-content-center">
                         <div class="align-self-center" data-aos="fade-up"data-aos-anchor-placement="center-center" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
@@ -85,7 +85,7 @@
                         
                     </div>
                     <div class="col-12 text-center d-lg-none d-md-none d-block">
-                        <img class="rounded-5" src="/assets/img/img-header.png" style="height: auto; width: 90%;" alt="">
+                        <img class="rounded-5" src="<?= base_url('/assets/images/img/img-header.png') ?>" style="height: auto; width: 90%;" alt="">
                     </div>
                 </div>
             </div>
@@ -98,17 +98,17 @@
     <section class="d-flex flex-column py-5 mt-lg-0 mt-5">
 
         <div class="mx-auto text-center">
-            <img class="mx-auto mb-2" src="/assets/icon/cleint-kami.svg" alt="">
+            <img class="mx-auto mb-2" src="<?= base_url('/assets/images/icon/cleint-kami.svg') ?>" alt="">
             <h5 class="fw-bold">Client <span class="text-danger">Kami</span></h5>
             <p class="text-secondary text-decoration-underline">Simak lebih lengkap pengalaman mereka</p>
         </div>
 
         <div class="container d-flex flex-lg-row flex-column justify-content-center align-items-center mt-3">
-            <img class="mx-3 my-lg-0 my-4" src="/assets/client/logo-aksipangan.png" alt="" style="height: 30px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-            <img class="mx-3 my-lg-0 my-4" src="/assets/client/logo-observasi.png" alt="" style="height: 40px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-            <img class="mx-3 my-lg-0 my-4" src="/assets/client/logo-pangannews.png" alt="" style="height: 35px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-            <img class="mx-3 my-lg-0 my-4" src="/assets/client/logo-radarsuara.png" alt="" style="height: 40px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-            <img class="mx-3 my-lg-0 my-4" src="/assets/client/logo-panganinitiative.png" alt="" style="height: 40px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+            <img class="mx-3 my-lg-0 my-4" src="<?= base_url('/assets/images/client/logo-aksipangan.png') ?>" alt="" style="height: 30px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+            <img class="mx-3 my-lg-0 my-4" src="<?= base_url('/assets/images/client/logo-observasi.png') ?>" alt="" style="height: 40px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+            <img class="mx-3 my-lg-0 my-4" src="<?= base_url('/assets/images/client/logo-pangannews.png') ?>" alt="" style="height: 35px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+            <img class="mx-3 my-lg-0 my-4" src="<?= base_url('/assets/images/client/logo-radarsuara.png') ?>" alt="" style="height: 40px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+            <img class="mx-3 my-lg-0 my-4" src="<?= base_url('/assets/images/client/logo-panganinitiative.png') ?>" alt="" style="height: 40px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
         </div>
 
         <div class="mx-auto text-center mt-5">
@@ -116,9 +116,9 @@
         </div>
 
         <div class="container d-flex flex-lg-row flex-column justify-content-center align-items-center mt-3">
-            <img class="mx-3 my-lg-0 my-4" src="/assets/client/logo-.png" alt="" style="height: 70px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-            <img class="mx-3 my-lg-0 my-4" src="/assets/client/logo-kementrianperindustrian.png" alt="" style="height: 70px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-            <img class="mx-3 my-lg-0 my-4" src="/assets/client/logo-kementrianpertanian.png" alt="" style="height: 90px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+            <img class="mx-3 my-lg-0 my-4" src="<?= base_url('/assets/images/client/logo-.png') ?>" alt="" style="height: 70px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+            <img class="mx-3 my-lg-0 my-4" src="<?= base_url('/assets/images/client/logo-kementrianperindustrian.png') ?>" alt="" style="height: 70px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
+            <img class="mx-3 my-lg-0 my-4" src="<?= base_url('/assets/images/client/logo-kementrianpertanian.png') ?>" alt="" style="height: 90px;" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
         </div>
 
     </section>
@@ -129,14 +129,14 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="text-lg-start text-center">
-                        <img class=" mb-2" src="/assets/icon/apa-survey-aja.svg" alt="">
+                        <img class=" mb-2" src="<?= base_url('/assets/images/icon/apa-survey-aja.svg') ?>" alt="">
                         <h5 class="fw-bold">Apa itu <span class="text-danger">Surveyaja.com</span></h5>
                         <p class="text-secondary text-justify">Membantu Anda Melakukan Survey Dengan Mudah</p>
                         <p class="text-secondary text-justify">Membangun pengetahuan dan menguji hipotesa menjadi kebutuhan para data driven decision maker, surveyaja.com membantu Anda menyedikan survey yang reliable membantu memprovokasi gagasan dan hipotesis Anda.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <img class="rounded-5" src="/assets/img/img-apa-itu.png" style="width: 100%;" alt="" data-aos="fade-up" data-aos-duratioin="3000">
+                    <img class="rounded-5" src="<?= base_url('/assets/images/img/img-apa-itu.png') ?>" style="width: 100%;" alt="" data-aos="fade-up" data-aos-duratioin="3000">
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
         
         <div class="container">
             <div class="mx-auto text-center">
-                <img class="mx-auto mb-2" src="/assets/icon/sec-fitur.svg" alt="">
+                <img class="mx-auto mb-2" src="<?= base_url('/assets/images/icon/sec-fitur.svg') ?>" alt="">
                 <h5 class="fw-bold"><span class="text-danger">Fitur</span> yang anda dapatkan</h5>
                 <p class="text-secondary px-lg-5 px-2 mx-auto">Membangun pengetahuan dan menguji hipotesa menjadi kebutuhan para data driven decision maker, <br> surveyaja.com membantu Anda menyedikan survey yang reliable membantu memprovokasi gagasan dan hipotesis Anda. </p>
             </div>
@@ -157,42 +157,42 @@
                 <div class="row row-cols-lg-6 row-cols-lg-3 row-cols-1">
                     <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duratioin="3000">
                         <div class="border border-2 rounded-4 px-3 py-4 h-100">
-                            <img class="mb-4" src="/assets/icon/fitur-supervisi.svg" alt="">
+                            <img class="mb-4" src="<?= base_url('/assets/images/icon/fitur-supervisi.svg') ?>" alt="">
                             <h5 class="fw-bold">Supervisi</h5>
                             <p class="text-secondary">Proses validasi data telah menggunakan koordinat titik lokasi survey dan foto lokasi</p>
                         </div>
                     </div>
                     <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duratioin="3000">
                         <div class="border border-2 rounded-4 px-3 py-4 h-100">
-                            <img class="mb-4" src="/assets/icon/fitur-konsultasi.svg" alt="">
+                            <img class="mb-4" src="<?= base_url('/assets/images/icon/fitur-konsultasi.svg') ?>" alt="">
                             <h5 class="fw-bold">Konsultasi</h5>
                             <p class="text-secondary">Surveyaja.com menyediakan layanan konsultasi melalui pilihan level akun yang dipilih</p>
                         </div>
                     </div>
                     <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duratioin="3000">
                         <div class="border border-2 rounded-4 px-3 py-4 h-100">
-                            <img class="mb-4" src="/assets/icon/fitur-jaringan-luas.svg" alt="">
+                            <img class="mb-4" src="<?= base_url('/assets/images/icon/fitur-jaringan-luas.svg') ?>" alt="">
                             <h5 class="fw-bold">Jaringan Luas</h5>
                             <p class="text-secondary">Didukung dengan tenaga surveyor di seluruh wilayah Indonesia</p>
                         </div>
                     </div>
                     <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duratioin="3000">
                         <div class="border border-2 rounded-4 px-3 py-4 h-100">
-                            <img class="mb-4" src="/assets/icon/fitur-input-data.svg" alt="">
+                            <img class="mb-4" src="<?= base_url('/assets/images/icon/fitur-input-data.svg') ?>" alt="">
                             <h5 class="fw-bold">Input Data</h5>
                             <p class="text-secondary">Proses input data dilakukan dengan mudah</p>
                         </div>
                     </div>
                     <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duratioin="3000">
                         <div class="border border-2 rounded-4 px-3 py-4 h-100">
-                            <img class="mb-4" src="/assets/icon/fitur-paperless.svg" alt="">
+                            <img class="mb-4" src="<?= base_url('/assets/images/icon/fitur-paperless.svg') ?>" alt="">
                             <h5 class="fw-bold">Paperless</h5>
                             <p class="text-secondary">Seluruh aktivitas pengambilan data dilakukan dengan pendekatan paperless</p>
                         </div>
                     </div>
                     <div class="col mb-lg-0 mb-3" data-aos="fade-up" data-aos-duratioin="3000">
                         <div class="border border-2 rounded-4 px-3 py-4 h-100">
-                            <img class="mb-4" src="/assets/icon/fitur-analisa-data.svg" alt="">
+                            <img class="mb-4" src="<?= base_url('/assets/images/icon/fitur-analisa-data.svg') ?>" alt="">
                             <h5 class="fw-bold">Analisa Data</h5>
                             <p class="text-secondary">Dari data yang didapat analisis data lakukan secara sistematik</p>
                         </div>
@@ -209,91 +209,91 @@
     <section class="d-flex flex-column py-5 bg-danger">
         <div class="container">
             <div class="mx-auto text-start">
-                <img class="mx-auto mb-2" src="/assets/icon/sec-layanan-kami.svg" alt="">
+                <img class="mx-auto mb-2" src="<?= base_url('/assets/images/icon/sec-layanan-kami.svg') ?>" alt="">
                 <h5 class="fw-bold text-white">Layanan <span class="text-warning">Kami</span></h5>
                 <p class="text-white">Membantu Anda Melakukan Survey Dengan Mudah
                 </p>
             </div>
             <div class="row row-cols-lg-3 row-cols-1">
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-1.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-1.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Pelanggan/Masyarakat</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Kepuasan <br> Masyarakat</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-2.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-2.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Pelanggan/Masyarakat</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Kepuasan <br> Pelanggan</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-3.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-3.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Karyawan</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Keterlibatan <br> Karyawan</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-4.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-4.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Karyawan</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Kepuasan <br> Karyawan</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-5.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-5.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Event</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Feedback <br> Event</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-6.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-6.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Social</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey <br> Pengeluaran RT</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-7.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-7.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Kesehatan</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Pelayanan <br> Rumah Sakit</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-8.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-8.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Kesehatan</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Perilaku Masyarakat <br> Pasca Covid-19</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-9.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-9.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-semibold align-self-start px-3 py-2 mb-3">Pendidikan</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Demografi <br> Pendidikan</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-10.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-10.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-normal align-self-start px-3 py-2 mb-3">Riset Pasar</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Brand <br> Awareness</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-11.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-11.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-normal align-self-start px-3 py-2 mb-3">Riset Pasar</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey <br> Produk/Jasa</h3>
                     </div>
                 </div>
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-12.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-12.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-normal align-self-start px-3 py-2 mb-3">Lainnya</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey Politik <br> (Pilpres, Threshold, dll)</h3>
@@ -301,7 +301,7 @@
                 </div>
 
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-13.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-13.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-normal align-self-start px-3 py-2 mb-3">Lainnya</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey <br> Isu Politik</h3>
@@ -309,7 +309,7 @@
                 </div>
 
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-14.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-14.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-normal align-self-start px-3 py-2 mb-3">Lainnya</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey <br> Penggunaan Media</h3>
@@ -317,7 +317,7 @@
                 </div>
 
                 <div class="col mb-3" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duratioin="3000">
-                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('/assets/img/layanan-15.png') no-repeat center center; background-size: cover; height: 100%;">
+                    <div class="card text-white border-0 rounded-4 p-4" style="background: linear-gradient(186.01deg, rgba(255, 255, 255, 0) 6.28%, #1C1C1C 89.06%), url('<?= base_url('/assets/images/img/layanan-15.png') ?>') no-repeat center center; background-size: cover; height: 100%;">
                         <span class="badge rounded-pill text-bg-warning text-danger fw-normal align-self-start px-3 py-2 mb-3">Lainnya</span>
                         
                         <h3 class="card-title mt-5 mb-0">Survey KYC <br> (Know Your Customer)</h3>
@@ -337,13 +337,13 @@
     <section class="d-flex flex-column py-5">
 
         <div class="mx-auto text-center">
-            <img class="mx-auto mb-2" src="/assets/icon/cleint-kami.svg" alt="">
+            <img class="mx-auto mb-2" src="<?= base_url('/assets/images/icon/cleint-kami.svg') ?>" alt="">
             <h5 class="fw-bold">Cara <span class="text-danger">Kerja</span></h5>
             <p class="text-secondary text-decoration-underline">Alur yang mudah, memudahkan proses surveymu</p>
         </div>
 
         <div class="container d-flex flex-lg-row flex-column justify-content-center align-items-center mt-3">
-            <img class="w-100" src="/assets/img/img-cara-kerja.png" alt="" data-aos="fade-up" data-aos-duratioin="3000">
+            <img class="w-100" src="<?= base_url('/assets/images/img/img-cara-kerja.png') ?>" alt="" data-aos="fade-up" data-aos-duratioin="3000">
         </div>
 
         <!-- <img class="position-absolute end-0" src="/assets/img/circle-white-end.svg" style="width: 200px;" alt=""> -->
@@ -362,7 +362,7 @@
         </div>
 
         <div class="container d-flex flex-lg-row flex-column justify-content-center align-items-center mt-5">
-            <img class="w-75" src="/assets/img/sec-kapan-lagi.png" alt="" style="margin-bottom: -48px;" data-aos="fade-up" data-aos-duratioin="3000">
+            <img class="w-75" src="<?= base_url('/assets/images/img/sec-kapan-lagi.png') ?>" alt="" style="margin-bottom: -48px;" data-aos="fade-up" data-aos-duratioin="3000">
         </div>
 
         <!-- <img class="position-absolute end-0" src="/assets/img/circle-white-end.svg" style="width: 200px;" alt=""> -->
@@ -374,7 +374,7 @@
     <section class="d-flex flex-column py-5">
 
         <div class="mx-auto text-center">
-            <img class="mx-auto mb-2" src="/assets/icon/sec-dapatkan-informasi.svg" alt="">
+            <img class="mx-auto mb-2" src="<?= base_url('/assets/images/icon/sec-dapatkan-informasi.svg') ?>" alt="">
             <h5 class="fw-bold">Dapatkan informasi terbaru dari kami</h5>
             <p class="text-secondary text-decoration-underline">Tuliskan email anda di bawah ini</p>
         </div>
@@ -397,11 +397,11 @@
         <div class="container pb-3">
             <dev class="row">
                 <div class="col-lg-6 col-12 pe-5 ps-3">
-                    <img src="/assets/img/main-logo.svg" alt="">
+                    <img src="<?= base_url('/assets/images/img/main-logo.svg') ?>" alt="">
                     <p class="text-white mt-4">Membangun pengetahuan dan menguji hipotesa menjadi kebutuhan para data driven decision maker, surveyaja.com membantu Anda menyedikan survey yang reliable membantu memprovokasi gagasan dan hipotesis Anda.</p>
                 </div>
                 <div class="col-lg-3 col-12 d-flex flex-column ps-lg-5 ps-3 mt-lg-5 mt-3">
-                    <a href="" class="text-white mb-2 text-decoration-none">Beranda</a>
+                    <a href="<?= site_url('') ?>" class="text-white mb-2 text-decoration-none">Beranda</a>
                     <a href="" class="text-white mb-2 text-decoration-none">Fitur</a>
                     <a href="" class="text-white mb-2 text-decoration-none">Layanan Kami</a>
                     <a href="" class="text-white mb-2 text-decoration-none">Cara Mulai</a>
@@ -422,8 +422,8 @@
         <!-- <img class="position-absolute end-0" src="/assets/img/circle-white-end.svg" style="width: 200px;" alt=""> -->
     </section>
 
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="/node_modules/aos/dist/aos.js"></script>
+    <script src="<?= base_url('assets/node_modules/bootstrap/dist/js/bootstrap.bundle.js') ?>"></script>
+    <script src="<?= base_url('assets/node_modules/aos/dist/aos.js') ?>"></script>
     <script>
         AOS.init();
     </script>
